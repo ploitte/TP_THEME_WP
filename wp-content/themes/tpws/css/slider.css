@@ -1,0 +1,147 @@
+body{
+    overflow-x: hidden;
+}
+
+
+
+.slider{
+    position: relative;
+    height: 91.4vh;
+
+    left:0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat:  no-repeat;
+
+    transition: 1s all ease-in-out;
+}
+
+.slides{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    background-size: cover;
+    background-position: center;
+    left: 0;
+}
+
+.arrow{
+    position: absolute;
+    height: 64px;
+    width: 64px;
+    top: 50%;
+    z-index: 1;
+}
+
+#arrowLeft{
+    left: -10%;
+    background-image: url("arrow_left.png");
+    transition: 1s ease-in-out all; 
+}
+ 
+#arrowRight{
+    right: -10%; 
+    background-image: url("arrow_right.png");
+    transition: 0.7s ease-in-out all; 
+
+}
+
+.video{
+    position: absolute;
+    height: 64px;
+    width: 64px;
+    bottom: 3%;
+    z-index: 1;
+    display: none;
+}
+
+#pause{
+    right: 3%;
+    background-image: url("pause.png");  
+}
+
+#play{
+    right: 8%; 
+    background-image: url("play.png");
+}
+
+#arrowLeft:hover, #arrowRight:hover, #pause:hover, #play:hover{
+    transform: scale(1.1);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+
+/** Categorie Cont **/
+
+#contAllCat{
+    position: relative;
+    padding-top: 15%;
+    padding-bottom: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("./bgcat.jpg");
+    background-size: cover;
+
+}
+
+#bannerCat{
+    position: absolute;
+    width: 100%;
+    height: 17%;
+    background: #2b2b2b;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    font-size: 50px;
+}
+
+#bannerCat h1{
+    margin: 0;
+    font-family: fantasy;
+    font-size: 50px;
+    color: white;
+}
+
+
+.linkCat{
+    padding: 0;
+    width: 75%;
+    text-decoration: none;
+}
+
+.linkCat:hover{
+    transform: scale(0.9);
+    opacity: 0.8;
+}
+
+.catDetails{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #bb1e1e;
+    border-radius: 10px;
+    box-shadow: 0 0 18px 3px black;
+}
+
+.titleCatHome{
+    color: black;
+    font-family: fantasy;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
